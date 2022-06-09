@@ -1,4 +1,4 @@
-<!--- ## Welcome to Dani Bacaicoa --->
+## Welcome to Dani Bacaicoa
 ## This site is under construction
 
 <!--- You can use the [editor on GitHub](https://github.com/DaniBacaicoa/danibacaicoa.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
