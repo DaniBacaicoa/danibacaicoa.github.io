@@ -2,25 +2,111 @@
 <html>
   <head>
     <title>My Github Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 40px;
+        margin: 0;
+      }
+      
+      nav {
+        background-color: #666;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 20px;
+      }
+      
+      section {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      section h2 {
+        font-size: 30px;
+        margin-top: 0;
+      }
+      
+      section p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 30px;
+        }
+        
+        nav a {
+          font-size: 16px;
+        }
+        
+        section h2 {
+          font-size: 24px;
+        }
+        
+        section p {
+          font-size: 16px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>About Me</h1>
-    <p>Insert a short introduction about yourself here.</p>
-    
-    <h2>CV</h2>
-    <p><a href="link-to-your-cv.pdf">Download my CV</a></p>
-    
-    <h2>Github Projects</h2>
-    <ul>
-      <li><a href="link-to-your-project-1">Project 1</a></li>
-      <li><a href="link-to-your-project-2">Project 2</a></li>
-    </ul>
-    
-    <h2>Research</h2>
-    <p>Insert information about your research here.</p>
-    
-    <h2>Interests</h2>
-    <p>Insert information about your interests here.</p>
-  </body>
+    <header>
+      <h1>My Github Page</h1>
+    </header>
+    <nav>
+      <a href="#cv">CV</a>
+      <a href="#github-projects">Github Projects</a>
+      <a href="#research">Research</a>
+      <a href="#interests">Interests</a>
+      <a href="#about-me">About Me</a>
+    </nav>
+    <section id="cv">
+      <    <h2>My CV</h2>
+    <p>Insert your CV here.</p>
+  </section>
+  <section id="github-projects">
+    <h2>My Github Projects</h2>
+    <p>Insert your Github projects here.</p>
+  </section>
+  <section id="research">
+    <h2>My Research</h2>
+    <p>Insert your research here.</p>
+  </section>
+  <section id="interests">
+    <h2>My Interests</h2>
+    <p>Insert your interests here.</p>
+  </section>
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>Insert information about yourself here.</p>
+  </section>
+ </body>
 </html>
-
