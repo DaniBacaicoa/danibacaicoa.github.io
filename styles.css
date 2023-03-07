@@ -1,111 +1,76 @@
-/* Typography */
+/* Main styles */
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  margin-top: 0;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
+  font-size: 36px;
+  font-weight: bold;
+  color: #f44336;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 p {
-  margin-bottom: 1.5rem;
-}
-
-/* Colors */
-:root {
-  --primary-color: #8d6c9f;
-  --secondary-color: #f6c2d2;
-  --background-color: #fff7e5;
-  --text-color: #333;
-}
-
-body {
-  color: var(--text-color);
-  background-color: var(--background-color);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+  text-align: justify;
 }
 
 a {
-  color: var(--primary-color);
+  color: #4CAF50;
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: #f44336;
 }
 
-/* Layout */
+/* Additional styles for a more colorful and joyful feel */
+
+body {
+  background-color: #f9fbe7;
+}
+
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 1rem;
-  margin-bottom: 2rem;
+h1 {
+  font-size: 48px;
+  color: #ff9800;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+p {
+  font-size: 20px;
+  color: #333;
+  background-color: #fff9c4;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
-nav li {
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: #fff;
+a {
+  color: #8bc34a;
   text-decoration: none;
-  padding: 0.5rem;
+  border-bottom: 2px solid #8bc34a;
 }
 
-nav a:hover {
-  background-color: var(--secondary-color);
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-section {
-  background-color: #fff;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 1 1 400px;
-}
-
-section h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--primary-color);
-  color: #fff;
+a:hover {
+  color: #ff5722;
+  border-bottom-color: #ff5722;
 }
