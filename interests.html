@@ -28,6 +28,23 @@
 		tr:hover {
 			background-color: #ddd;
 		}
+
+		.half-star {
+		  position: relative;
+		  display: inline-block;
+		  color: black;
+		}
+
+		.half-star::after {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  height: 100%;
+		  width: 50%;
+		  background-color: white;
+		  z-index: 1;
+		}
 	</style>
 </head>
 <body>
