@@ -8,6 +8,43 @@
 		.stars {
 			color: gold;
 		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}
+		th {
+			background-color: #333;
+			color: white;
+			font-weight: bold;
+			border-bottom: 2px solid white;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		tr:hover {
+			background-color: #ddd;
+		}
+		.half-star {
+			display: inline-block;
+			overflow: hidden;
+			color: gold;
+			font-size: 1.2em;
+			line-height: 1em;
+			vertical-align: bottom;
+		}
+		.half-star::before {
+			content: "\2605";
+			position: relative;
+			left: -0.5em;
+		}
+		.half-star.half::before {
+			content: "\E89E";
+			left: -0.25em;
+		}
 	</style>
 </head>
 <body>
@@ -48,7 +85,7 @@
 					<td>2022</td>
 					<td>Sinsonte</td>
 					<td>Walter Trevis</td>
-					<td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#189;</span></td>
+					<td><span class="stars"><span class="half-star"></span><span class="half-star half"></span>&#9733;&#9733;&#9733;&#9733;</span></td>
 					<td>This is one of my all-time favorite books. I love the story and the writing style.</td>
 				</tr>
 			</tbody>
