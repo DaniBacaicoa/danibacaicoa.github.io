@@ -1,76 +1,73 @@
-/* Main styles */
+/* Body Styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #e9edf0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #F5ECEC;
+  color: #444444;
 }
 
-.container {
-  max-width: 800px;
+/* Table Styling */
+table {
   margin: 0 auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  border: 2px solid #444444;
+  width: 80%;
+  max-width: 800px;
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #f44336;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #555;
-  text-align: justify;
-}
-
-a {
-  color: #4CAF50;
-}
-
-a:hover {
-  color: #f44336;
-}
-
-/* Additional styles for a more colorful and joyful feel */
-
-body {
-  background-color: #f9fbe7;
-}
-
-.container {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  font-size: 48px;
-  color: #ff9800;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
-}
-
-p {
-  font-size: 20px;
-  color: #333;
-  background-color: #fff9c4;
+table th,
+table td {
   padding: 10px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #444444;
 }
 
+table th {
+  background-color: #F9D9D9;
+  font-weight: bold;
+  color: #444444;
+}
+
+table td {
+  background-color: #FFFFFF;
+}
+
+/* Links Styling */
 a {
-  color: #8bc34a;
+  color: #6D1A1A;
   text-decoration: none;
-  border-bottom: 2px solid #8bc34a;
+  border-bottom: 2px solid #6D1A1A;
+  transition: border-bottom .3s ease-in-out;
 }
 
 a:hover {
-  color: #ff5722;
-  border-bottom-color: #ff5722;
+  border-bottom: 2px solid #F9D9D9;
+}
+
+/* Header Styling */
+header {
+  background-color: #F9D9D9;
+  padding: 20px;
+}
+
+header h1 {
+  color: #6D1A1A;
+  font-weight: bold;
+}
+
+header h2 {
+  color: #444444;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #F9D9D9;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
 }
