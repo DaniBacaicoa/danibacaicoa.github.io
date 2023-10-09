@@ -3,7 +3,7 @@ body {
   background-color: #f0f8ff;
 }
 
-nav {
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -19,12 +19,12 @@ img {
   margin-bottom: 20px;
 }
 
-nav ul {
+.sidebar ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav li a {
+.sidebar li a {
   color: #000;
   text-decoration: none;
   font-size: 16px;
@@ -32,12 +32,12 @@ nav li a {
   padding: 10px 15px;
 }
 
-nav li a.active {
+.sidebar li a.active {
   background-color: #3283db;
   color: #fff;
 }
 
-main {
+.content {
   margin-left: 220px;
   padding: 20px;
 }
