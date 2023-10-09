@@ -7,49 +7,65 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="sidebar">
+  <nav class="sidebar">
     <img src="your-profile-picture.png" alt="Your profile picture">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#software">Software</a></li>
-      <li><a href="#paper">Paper</a></li>
-      <li><a href="#essays">Essays</a></li>
-      <li><a href="#tales">Tales</a></li>
-      <li><a href="#music">Music</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#github-projects">GitHub Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#interests">Interests</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <div class="content">
-    <section id="about">
+  <main>
+    <section id="about-me">
       <h2>About Me</h2>
       <p>Write a brief introduction about yourself here.</p>
     </section>
 
-    <section id="software">
-      <h2>Software</h2>
-      <p>Write about your software work here.</p>
+    <section id="cv">
+      <h2>CV</h2>
+      <p>Write about your work experience, education, and other relevant qualifications here.</p>
     </section>
 
-    <section id="paper">
-      <h2>Paper</h2>
-      <p>Write about your research papers here.</p>
+    <section id="github-projects">
+      <h2>GitHub Projects</h2>
+      <p>List your GitHub projects here, including links to the repositories.</p>
     </section>
 
-    <section id="essays">
-      <h2>Essays</h2>
-      <p>Write about your essays here.</p>
+    <section id="research">
+      <h2>Research</h2>
+      <p>Write about your research interests and publications here.</p>
     </section>
 
-    <section id="tales">
-      <h2>Tales</h2>
-      <p>Write about your tales here.</p>
+    <section id="interests">
+      <h2>Interests</h2>
+      <p>Write about your hobbies and other interests here.</p>
     </section>
+  </main>
 
-    <section id="music">
-      <h2>Music</h2>
-      <p>Write about your music here.</p>
-    </section>
-  </div>
+  <script>
+    // This script will highlight the current section in the navigation menu when scrolling.
+    window.addEventListener('scroll', function() {
+      var sections = document.querySelectorAll('main > section');
+      var currentSection = sections[0];
+      for (var i = 1; i < sections.length; i++) {
+        if (sections[i].getBoundingClientRect().top < 100) {
+          currentSection = sections[i];
+          break;
+        }
+      }
+
+      var navigationLinks = document.querySelectorAll('nav ul li a');
+      for (var i = 0; i < navigationLinks.length; i++) {
+        if (navigationLinks[i].getAttribute('href') === '#' + currentSection.id) {
+          navigationLinks[i].classList.add('active');
+        } else {
+          navigationLinks[i].classList.remove('active');
+        }
+      }
+    });
+  </script>
 </body>
 </html>
-
