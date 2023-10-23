@@ -1,71 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=2.0">
-  <title>Daniel Bacaicoa</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <nav class="sidebar">
-    <img src="Dani2.jpg" alt="Your profile picture">
-    <ul>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#cv">CV</a></li>
-      <li><a href="#github-projects">GitHub Projects</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#interests">Interests</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="about-me">
-      <h2>About Me</h2>
-      <p>Write a brief introduction about yourself here.</p>
-    </section>
-
-    <section id="cv">
-      <h2>CV</h2>
-      <p>Write about your work experience, education, and other relevant qualifications here.</p>
-    </section>
-
-    <section id="github-projects">
-      <h2>GitHub Projects</h2>
-      <p>List your GitHub projects here, including links to the repositories.</p>
-    </section>
-
-    <section id="research">
-      <h2>Research</h2>
-      <p>Write about your research interests and publications here.</p>
-    </section>
-
-    <section id="interests">
-      <h2>Interests</h2>
-      <p>Write about your hobbies and other interests here.</p>
-    </section>
-  </main>
-
-  <script>
-    // This script will highlight the current section in the navigation menu when scrolling.
-    window.addEventListener('scroll', function() {
-      var sections = document.querySelectorAll('main > section');
-      var currentSection = sections[0];
-      for (var i = 1; i < sections.length; i++) {
-        if (sections[i].getBoundingClientRect().top < 100) {
-          currentSection = sections[i];
-          break;
-        }
-      }
-
-      var navigationLinks = document.querySelectorAll('nav ul li a');
-      for (var i = 0; i < navigationLinks.length; i++) {
-        if (navigationLinks[i].getAttribute('href') === '#' + currentSection.id) {
-          navigationLinks[i].classList.add('active');
-        } else {
-          navigationLinks[i].classList.remove('active');
-        }
-      }
-    });
-  </script>
+    <div class="menu">
+        <img src="tu_foto.jpg" alt="Tu Foto">
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#projects">Github Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#interests">Interests</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <section id="about">
+            <h1>About me</h1>
+            <p>Inserta aquí información sobre ti.</p>
+        </section>
+        
+        <section id="cv">
+            <h1>CV</h1>
+            <p>Inserta aquí tu CV.</p>
+        </section>
+        
+        <section id="projects">
+            <h1>Github Projects</h1>
+            <p>Inserta aquí información sobre tus proyectos en Github.</p>
+        </section>
+        
+        <section id="research">
+            <h1>Research</h1>
+            <p>Inserta aquí información sobre tus investigaciones.</p>
+        </section>
+        
+        <section id="interests">
+            <h1>Interests</h1>
+            <p>Inserta aquí información sobre tus intereses.</p>
+        </section>
+    </div>
 </body>
 </html>
