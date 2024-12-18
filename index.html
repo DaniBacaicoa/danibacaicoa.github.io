@@ -21,22 +21,20 @@
             color: white;
             display: flex;
             align-items: center;
-            padding: 20px;
+            justify-content: space-between;
+            padding: 30px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header img {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             border-radius: 8px;
-            margin-right: 15px;
         }
 
         nav {
             display: flex;
-            justify-content: center;
             gap: 15px;
-            margin-bottom: 30px;
         }
 
         nav a {
@@ -45,6 +43,7 @@
             background: #4CAF50;
             padding: 10px 15px;
             border-radius: 5px;
+            font-weight: bold;
             transition: background-color 0.3s;
         }
 
@@ -93,16 +92,15 @@
 <body>
     <header>
         <img src="Dani2.jpg" alt="Daniel Bacaicoa">
-        <div>Welcome to My Personal Page</div>
+        <nav>
+            <a href="about.html">About Me</a>
+            <a href="cv.html">CV</a>
+            <a href="projects.html">Projects</a>
+            <a href="research.html">Research</a>
+            <a href="interests.html">Interests</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="about.html">About Me</a>
-        <a href="cv.html">CV</a>
-        <a href="projects.html">Projects</a>
-        <a href="research.html">Research</a>
-        <a href="interests.html">Interests</a>
-        <a href="contact.html">Contact</a>
-    </nav>
     <main>
         <div class="construction-note">
             This site is currently under construction. Some sections may be unfinished or not fully functional.
