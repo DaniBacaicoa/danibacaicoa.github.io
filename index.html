@@ -19,18 +19,17 @@
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 15px 10px;
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header img {
-            width: 100px;
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 10px;
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            margin-right: 15px;
         }
 
         nav {
@@ -60,23 +59,6 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             background-color: #ffffff;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        section h1 {
-            font-size: 2em;
-            color: #333;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-        }
-
-        section p {
-            font-size: 1.1em;
-            line-height: 1.8;
-            margin-bottom: 20px;
         }
 
         .construction-note {
@@ -111,15 +93,15 @@
 <body>
     <header>
         <img src="Dani2.jpg" alt="Daniel Bacaicoa">
-        Welcome to My Personal Page
+        <div>Welcome to My Personal Page</div>
     </header>
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#cv">CV</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#interests">Interests</a>
-        <a href="#contact">Contact</a>
+        <a href="about.html">About Me</a>
+        <a href="cv.html">CV</a>
+        <a href="projects.html">Projects</a>
+        <a href="research.html">Research</a>
+        <a href="interests.html">Interests</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <main>
         <div class="construction-note">
@@ -132,26 +114,6 @@
             <p>When I'm not digging into mathematics, I'm out there on the court trying my hand at tennis and padel. No, I'm not exactly the next Federer (my backhand is also one-handed), but I'm having a blast and giving it my all. I also love swimming, and lately, I've embraced the world of running.</p>
             <p>But I'm not just a math and sports enthusiast. I love being outdoors, exploring nature, or simply enjoying quality time with my wonderful family and friends.</p>
             <p>You can find me on my social media profiles:</p>
-        </section>
-        <section id="cv">
-            <h1>My CV</h1>
-            <p>Check out my academic and professional journey in signal processing and beyond.</p>
-        </section>
-        <section id="projects">
-            <h1>Projects</h1>
-            <p>Discover my projects and collaborations hosted on GitHub.</p>
-        </section>
-        <section id="research">
-            <h1>Research</h1>
-            <p>Learn about my work in machine learning and classification problems with noisy labels.</p>
-        </section>
-        <section id="interests">
-            <h1>Interests</h1>
-            <p>I love reading, playing music, and hiking.</p>
-        </section>
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Feel free to reach out at <a href="mailto:dbacacico@ing.uc3m.es">dbacacico@ing.uc3m.es</a></p>
         </section>
     </main>
     <footer>
