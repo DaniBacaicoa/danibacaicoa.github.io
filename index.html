@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+  index.html
+
+  This is a simple, elegant personal webpage template. It is designed to be
+  hosted on GitHub Pages or any other static hosting service.  The page
+  demonstrates how to organise content into sub‑pages for your CV, your
+  publications and your reading list while keeping the overall look clean
+  and modern.  A small interactive light bulb lives in the top‑right
+  corner.  Pulling its cord toggles a “light” effect and reveals a link to
+  the reading list page.
+
+  To customise this file: replace placeholder text such as “Tu Nombre”
+  with your own name, update the introductory paragraph and adjust the
+  navigation links if you add more pages.  You can also change colours
+  by editing the variables at the top of style.css.
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi página personal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Tu Nombre</h1>
+      <nav class="site-nav">
+        <ul>
+          <!-- update these links when you add your actual pages -->
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="publications.html">Publicaciones</a></li>
+          <li><a href="books.html">Libros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section class="intro">
+        <h2>Bienvenido</h2>
+        <p>
+          Esta plantilla sirve como punto de partida para tu sitio personal.
+          Puedes contar quién eres, qué investigas o cuáles son tus
+          intereses.  Escribe aquí un breve resumen de tu trayectoria,
+          incluye una foto si lo deseas y enlaza a tus subpáginas.
+        </p>
+      </section>
+    </main>
+
+    <!-- Light bulb with pull chain.  Clicking on it toggles the light and
+         reveals the reading list link.  The structure is deliberately
+         simple: a vertical chain made of small circles and a bulb at
+         the bottom.  The icons are drawn with CSS rather than images
+         for better scalability. -->
+    <div id="light-switch" class="light-off">
+      <div class="chain">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="bulb"></div>
+    </div>
+
+    <!-- Hidden overlay containing a link to the reading list.  When the
+         light is on, this overlay becomes visible. -->
+    <div id="reading-overlay" class="hidden">
+      <a href="books.html" class="reading-link">Ver lista de libros</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

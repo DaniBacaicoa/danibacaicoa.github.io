@@ -1,0 +1,210 @@
+/*
+  style.css
+
+  Global stylesheet for the simple personal website.  The design uses a
+  muted colour palette and generous white space to create a calm and
+  elegant atmosphere.  Feel free to adjust the colour variables below
+  to better match your personal brand.  The light‑bulb interactive
+  element is styled near the bottom of this file.
+*/
+
+/* Colour and spacing variables */
+:root {
+  --background: #fafafa;
+  --foreground: #1f2933;
+  --accent: #336699;
+  --accent-light: #4f81c2;
+  --overlay-bg: rgba(255, 255, 255, 0.95);
+  --max-width: 800px;
+  --font-family: 'Roboto', sans-serif;
+}
+
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family);
+  line-height: 1.6;
+}
+
+/* Layout */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--foreground);
+  font-weight: 500;
+  position: relative;
+}
+
+.site-nav a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+}
+
+.site-main {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.intro h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.intro p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Light switch styling */
+#light-switch {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Chain is composed of small spans that look like beads */
+#light-switch .chain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+#light-switch .chain span {
+  width: 0.15rem;
+  height: 0.5rem;
+  background: var(--foreground);
+  margin: 0.1rem 0;
+  border-radius: 0.1rem;
+}
+
+/* Bulb representation */
+#light-switch .bulb {
+  width: 1rem;
+  height: 1.5rem;
+  background: #ccc;
+  border-radius: 0.5rem 0.5rem 0.2rem 0.2rem;
+  border: 2px solid var(--foreground);
+  position: relative;
+}
+#light-switch .bulb::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0.6rem;
+  height: 0.2rem;
+  background: var(--foreground);
+  transform: translateX(-50%);
+  border-radius: 0.1rem;
+}
+
+/* Light on/off states; when on, the bulb glows */
+#light-switch.light-on .bulb {
+  background: #fffbc6;
+  box-shadow: 0 0 6px 3px rgba(255, 237, 128, 0.7);
+  border-color: #e3c26b;
+}
+
+/* Reading overlay styling */
+#reading-overlay {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--overlay-bg);
+  border: 1px solid #ccc;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 999;
+}
+
+#reading-overlay .reading-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#reading-overlay .reading-link:hover {
+  text-decoration: underline;
+}
+
+/* Table styling for the books page */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--accent);
+  color: white;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+table tr:hover {
+  background-color: #eaf2fc;
+}
+
+/* When visible, show the overlay */
+#reading-overlay.show {
+  display: block;
+}
+
+/* Hidden class for toggling visibility via JavaScript */
+.hidden {
+  display: none;
+}
