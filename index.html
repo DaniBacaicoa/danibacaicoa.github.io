@@ -1,95 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coming Soon — Daniel Bacaicoa-Barber</title>
-    <meta name="description" content="Dani's personal website. A new site is under construction — stay tuned!" />
 
-    <!-- Open Graph / SEO basics -->
-    <meta property="og:title" content="Coming Soon — Daniel Bacaicoa-Barber" />
-    <meta property="og:description" content="A new personal site is under construction — stay tuned!" />
-    <meta property="og:type" content="website" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Bacaicoa-Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- System fonts only; feel free to replace with your preferred font -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="wrapper">
-      <section class="card" role="region" aria-labelledby="headline">
-        <!-- Decorative, accessible SVG with title/desc -->
-        <figure class="art" aria-hidden="true">
-          <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" class="art-svg" role="img">
-            <title>Under construction illustration</title>
-            <desc>Two simple gears and a cone indicating work in progress.</desc>
-            <defs>
-              <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stop-color="var(--brand-500)" />
-                <stop offset="100%" stop-color="var(--brand-300)" />
-              </linearGradient>
-            </defs>
-            <!-- Gear 1 -->
-            <g class="gear gear-a">
-              <circle cx="55" cy="70" r="16" fill="none" stroke="url(#g)" stroke-width="6" />
-              <g fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round">
-                <path d="M55 46v8"/>
-                <path d="M55 86v8"/>
-                <path d="M31 70h8"/>
-                <path d="M71 70h8"/>
-                <path d="M40 55l6 6"/>
-                <path d="M64 79l6 6"/>
-                <path d="M40 85l6-6"/>
-                <path d="M64 61l6-6"/>
-              </g>
-            </g>
-            <!-- Gear 2 -->
-            <g class="gear gear-b">
-              <circle cx="95" cy="95" r="12" fill="none" stroke="url(#g)" stroke-width="5" />
-              <g fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round">
-                <path d="M95 77v6"/>
-                <path d="M95 107v6"/>
-                <path d="M77 95h6"/>
-                <path d="M107 95h6"/>
-                <path d="M84 84l4 4"/>
-                <path d="M102 102l4 4"/>
-                <path d="M84 106l4-4"/>
-                <path d="M102 88l4-4"/>
-              </g>
-            </g>
-            <!-- Cone -->
-            <g class="cone">
-              <polygon points="120,115 145,115 132.5,75" fill="url(#g)" opacity="0.9" />
-              <rect x="115" y="115" width="35" height="10" rx="3" fill="url(#g)" />
-            </g>
-          </svg>
-        </figure>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <header class="copy">
-          <h1 id="headline">Site under construction</h1>
-          <p class="tagline"><span class="name">I'm Daniel Bacaicoa-Barber.</span> I’m crafting something new for my page. Check back soon.</p>
+<body class="theme-home">
+    <div class="container">
+        <header class="site-header">
+            <a href="index.html" class="logo">Daniel Bacaicoa-Barber</a>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="research.html" class="nav-link">Research</a></li>
+                    <li><a href="interests.html" class="nav-link">Interests</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="meta">
-          <p>
-            In the meantime, you can reach me at
-            <a class="link" href="mailto:danibacaicoa@outlook.com" aria-label="Email: you at example dot com">danibacaicoa@outlook.com</a>
-          </p>
-        </div>
+        <main class="hero">
+            <div class="hero-content">
+                <h1>Welcome to my personal space.</h1>
+                <p>I'm Daniel, a researcher and developer passionate about creating elegant solutions to complex
+                    problems. This site is a collection of my work, thoughts, and interests.</p>
+                <a href="about.html" class="btn">More about me</a>
+            </div>
+            <div class="hero-image">
+                <img src="frog.png" alt="Illustration of a frog representing Daniel">
+            </div>
+        </main>
 
-        <div class="progress" aria-label="Build progress">
-          <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="42">
-            <span class="sr-only">17% complete</span>
-          </div>
-        </div>
-
-        <footer class="footer">
-          <div class="tape" aria-hidden="true" title="Construction tape"></div>
-          <small>© <span id="year">2025</span> Daniel Bacaicoa-Barber • All rights reserved</small>
+        <footer class="site-footer">
+            <p>&copy; 2025 Daniel Bacaicoa-Barber. Built with creativity.</p>
         </footer>
-      </section>
-    </main>
+    </div>
+</body>
 
-
-  </body>
 </html>
