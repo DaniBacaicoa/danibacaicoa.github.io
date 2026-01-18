@@ -282,3 +282,20 @@ p {
     font-size: 0.9rem;
   }
 }
+
+/* ========== PDF List Styles ========== */
+.pdf-list li {
+  margin-bottom: 0.5rem;
+}
+
+.pdf-link {
+  color: var(--accent-color);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
+}
