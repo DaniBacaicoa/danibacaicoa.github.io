@@ -299,3 +299,47 @@ p {
 .pdf-link:hover {
   text-decoration: underline;
 }
+
+/* ========== Contact Section ========== */
+.contact-section {
+  margin-top: 3rem;
+  animation: fadeIn 1s ease-out 0.5s backwards;
+}
+
+.contact-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  color: var(--text-color);
+  width: fit-content;
+}
+
+.contact-list i {
+  font-size: 1.25rem;
+  width: 1.5rem;
+  text-align: center;
+  color: var(--accent-color);
+  transition: transform 0.2s ease;
+}
+
+.contact-list a:hover i {
+  transform: scale(1.1);
+}
+
+.contact-list a:hover {
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
